@@ -13,7 +13,7 @@ First uploaded on 2023/7, was detected by 0/71 engines.
  - Encrypt/Decrypt payload with RC4 (key is stored in encrypted form inside the binary)
      - Decrypt the key by brute forcing to search to match a specific first byte
  - Obfuscate payload bytes as ipv4 addresses (252.72.131.228 → 0xFC 0x7B 0x48 0xE4)      
- - Dynamically resolves "syscall" instruction from ntdll.dll address space (Hell's Gate)
+ - Dynamically resolves "syscall" assembly instruction from ntdll.dll address space (Hell's Gate)
  - Dynamically resolve syscall System Service Numbers (Hell's Gate)
  - Process injection with dynamic syscalls (NtCreateUserProcess, NtAllocateVirtualMemory, NtWriteVirtualMemory, NtProtectVirtualMemory. NtCreateThreadEx)
  - Anti-Debug with
